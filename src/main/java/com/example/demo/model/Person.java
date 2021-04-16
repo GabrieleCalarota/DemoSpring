@@ -11,12 +11,12 @@ public class Person {
         return id;
     }
 
+    private final UUID id;
+
     @NotBlank
     public String getName() {
         return name;
     }
-
-    private final UUID id;
     private final String name;
 
     public Person(@JsonProperty("id") UUID id, @JsonProperty("name") String name) {

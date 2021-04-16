@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.dao;
 
 import com.example.demo.dao.FakePersonAccessDataService;
 import com.example.demo.model.Person;
