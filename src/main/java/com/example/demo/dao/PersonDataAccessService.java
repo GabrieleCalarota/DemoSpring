@@ -3,6 +3,7 @@ package com.example.demo.dao;
 import com.example.demo.model.Person;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -16,7 +17,9 @@ public class PersonDataAccessService implements PersonDAO{
 
     @Override
     public List<Person> selectAllPeople() {
-        return List.of(new Person(UUID.randomUUID(), "FROM POSTGRES DB"));
+        List<Person> newList = new ArrayList<>();
+        newList.add(new Person(UUID.randomUUID(), "FROM POSTGRES DB"));
+        return newList;
     }
 
     @Override
