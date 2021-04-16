@@ -32,7 +32,7 @@ public class FakePersonAccessDataService implements PersonDAO {
             return 0;
         }
         DB.remove(selectPersonById(id).get());
-        return 0;
+        return 1;
     }
 
     @Override
